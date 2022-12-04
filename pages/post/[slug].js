@@ -65,7 +65,7 @@ export default function Post(props) {
               description: post.excerpt || "",
               images: [
                 {
-                  url: GetImage(post?.mainImage).src || ogimage,
+                  url: GetImage(post?.mainImage)?.src || ogimage,
                   width: 800,
                   height: 600,
                   alt: ""

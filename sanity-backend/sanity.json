@@ -1,19 +1,17 @@
 {
   "root": true,
   "project": {
-    "name": "Stablo Template",
-    "basePath": "/studio"
+    "name": "sdaproj"
   },
   "api": {
-    "projectId": "",
+    "projectId": "h8oe8m37",
     "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool",
-    "asset-source-unsplash"
+    "@sanity/desk-tool"
   ],
   "env": {
     "development": {
@@ -22,13 +20,10 @@
       ]
     }
   },
-  "parts": [{
+  "parts": [
+    {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
-    },
-    {
-      "implements": "part:@sanity/desk-tool/structure",
-      "path": "./src/deskStructure"
     }
   ]
 }
